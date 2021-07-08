@@ -18,7 +18,7 @@ interface IProps {
 
 const AdditionalInfo = ({data, isFetching}: IProps) => {
 
-    const arrowStyle = {transform: `rotate(${data.windDegree-45}deg)`}
+    const arrowStyle = {transform: `rotate(${data.windDegree-45-180}deg)`}
 
     const dewPoint = useMemo(
         () => calculateDewPoint(data.temperature, data.humidity),
