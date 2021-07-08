@@ -1,0 +1,33 @@
+@import "./src/style/theme";
+
+.wrapper {
+}
+
+.header {
+  @include text-title;
+  padding: 4px 16px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  img {
+    width: 100px;
+  }
+}
+
+.temperature {
+  padding-left: 4px;
+ @include temperature-text()
+}
+
+.description {
+  padding: 4px 16px;
+  @include text-main($font-gray);
+}

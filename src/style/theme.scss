@@ -1,0 +1,20 @@
+@mixin text-main($color: Black) {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: normal;
+  font-size: 10pt;
+  color: $color;
+}
+@mixin text-title() {
+  @include text-main();
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+
+@mixin temperature-text() {
+  @include text-main();
+  font-weight: 700;
+  font-size: 24pt;
+}
+
+$font-gray: #5f5f5f

@@ -1,0 +1,18 @@
+@import "src/style/theme";
+.wrapper {
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8px 16px;
+  grid-gap: 12px 8px;
+}
+
+.gridCell {
+  @include text-main($font-gray);
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
